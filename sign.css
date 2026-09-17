@@ -1,129 +1,173 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
-    color:white;
+    color: white;
 }
+
 html,
 body {
     min-height: 100%;
     overflow-x: hidden;
+    background: #000;
 }
-.bg-img{
-     background-image: url(images/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_large.jpg);
-     min-height:100vh;
-     width:100%;
-     background-size: cover;
-     background-position: center;
-     transform :scale(1.02);
-}
-.bg-color{
-    min-height:100vh;
-     width:100%;
-     background: rgba(0, 0, 0, 0.406);
-     display: flex;
-     justify-content: center;
-     align-items: end;
-}
-.mdiv{
-   width:100%;
-   min-height: 58%;
 
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-    justify-content: center;
-}
-.mainf{
-    min-height: min(700px, calc(100vh - 2rem));
-    width: min(500px, calc(100% - 2rem));
-    background: rgba(0, 0, 0, 0.668);
-    border-radius: 10px; 
-    display: flex;
-    flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-}
-h1{
-    font-size: 32px;
+body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-img {
+    background-image: url(images/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_large.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-color {
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.406);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mainf {
+    width: min(500px, 100%);
+    min-height: min(700px, calc(100vh - 2rem));
+    background: rgba(0, 0, 0, 0.668);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.mdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 700;
-    height: 5%;
-    width:75%;   
+    line-height: 1.2;
 }
-input{
-    width: 98%;
+
+.hed {
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+input {
+    width: 100%;
     min-height: 56px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 4px;
-    border: .5px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    outline: none;
 }
-p{
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+p {
     color: #ffffffb3;
     font-size: 16px;
+    line-height: 1.5;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.btc{
+
+.btc {
     background: red;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+    cursor: pointer;
 }
-.hed{
-    width: 98%;
-    height:5%;
-    margin-bottom: 25px;
-}
-a
-{
+
+a {
     font-size: 17px;
     font-weight: 500;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
 }
-button{
+
+button {
     border-radius: 4px;
-    border: .5px solid white;
-    width: 98%;
-    height: 9%;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 100%;
+    min-height: 56px;
     background: rgba(66, 60, 60, 0.617);
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
-.bottom{
-    min-height: 22%;
-    width:75%;
+
+.bottom {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    margin-top: 1.5rem;
+}
 
+.check {
+    width: 18px;
+    height: 18px;
+    accent-color: #e50914;
+    margin: 0;
 }
-.check{
-    width: 25px;
-    margin: 10px 10px 0 10px;
-}
-.rememberme{
-    width: 300px;
-    height: 25%;
-    margin-top: 10px;
+
+.rememberme {
     color: #ffffff;
+    margin: 0;
 }
-.forgetpass{
-    margin-left: 10px;
+
+.forgetpass {
+    width: 100%;
+    margin: 0;
 }
-.col{
+
+.col {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 400;
-
 }
 
 @media (max-width: 420px) {
+    .bg-color {
+        padding: 0.75rem;
+    }
+
     .mainf {
-        width: calc(100% - 1rem);
+        width: 100%;
+        min-height: auto;
+        padding: 1.25rem 1rem;
     }
 
     .mdiv,
     .bottom {
-        width: 90%;
+        width: 100%;
     }
 
     h1 {
-        font-size: clamp(1.5rem, 8vw, 2rem);
+        font-size: clamp(1.75rem, 8vw, 2.2rem);
+    }
+
+    a,
+    p,
+    button,
+    input {
+        font-size: 0.95rem;
     }
 }

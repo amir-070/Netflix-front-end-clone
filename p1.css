@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     min-height: 100%;
@@ -135,6 +136,7 @@ video {
     width: 100%;
     background-position: center;
 }
+
 .title {
     width: min(45%, 600px);
     min-height: 80px;
@@ -147,22 +149,28 @@ video {
     justify-content: center;
     color: rgb(255, 255, 255);
     align-items: center;
-    animation: bt 5s steps(100) 0s infinite normal ;
+    animation: bt 5s steps(100) 0s infinite normal;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px rgba(134, 12, 12, 0.628);
-    background:#ff0000;
+    background: #ff0000;
     align-self: flex-start;
-   -webkit-text-stroke: 2px rgba(255, 255, 255, 0.63) ;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.63);
 }
-.title:hover{
+
+.title:hover {
     cursor: pointer;
 }
 
 @media (max-width: 700px) {
     nav {
-        padding: 0.5rem;
+        padding: 0.75rem 1rem;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        width: clamp(90px, 24vw, 120px);
+        height: 60px;
     }
 
     .nav-button {
@@ -171,26 +179,69 @@ video {
         min-height: 48px;
         margin-left: 0;
         overflow-x: auto;
-        justify-content: flex-start;
-        gap: 1.25rem;
-        padding: 0 1rem;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .a {
+        font-size: 0.75rem;
     }
 
     .sign-in {
-        width: 25vw;
-        min-width: 80px;
+        width: min(30vw, 130px);
+        min-width: 90px;
         height: 48px;
     }
 
     .trailer {
-        width: 100%;
-        min-height: calc(100vh - 140px);
-        padding: 2rem 1rem;
-        gap: 2rem;
+        width: min(100%, 900px);
+        min-height: calc(100vh - 170px);
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
     video,
     .title {
         width: min(100%, 600px);
+    }
+}
+
+@media (max-width: 420px) {
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-button {
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .a {
+        font-size: 0.68rem;
+    }
+
+    .sign-in {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .trailer {
+        width: 100%;
+        min-height: auto;
+        padding: 1rem 0.75rem 2rem;
+    }
+
+    video {
+        width: 100%;
+        max-height: 50vh;
+    }
+
+    .title {
+        width: 100%;
+        font-size: clamp(1.3rem, 8vw, 2rem);
+        padding: 0.9rem 0.75rem;
     }
 }
