@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+}
+.bg-img{
+     background-image: url(images/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_large.jpg);
+     height:100vh;
+     width:100vw;
+     transform :scale(1.02);
+}
+.bg-color{
+    height:100vh;
+     width:100vw;
+     background: rgba(0, 0, 0, 0.406);
+     display: flex;
+     justify-content: center;
+     align-items: end;
+}
+.mdiv{
+   width:75%;
+   height: 58%;
+
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+    justify-content: center;
+}
+.mainf{
+    height: 700px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.668);
+    border-radius: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+h1{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    height: 5%;
+    width:75%;   
+}
+input{
+    width: 98%;
+    height:15%;
+    background: transparent;
+    border-radius: 4px;
+    border: .5px solid white;
+}
+p{
+    color: #ffffffb3;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btc{
+    background: red;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+.hed{
+    width: 98%;
+    height:5%;
+    margin-bottom: 25px;
+}
+a
+{
+    font-size: 17px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif
+}
+button{
+    border-radius: 4px;
+    border: .5px solid white;
+    width: 98%;
+    height: 9%;
+    background: rgba(66, 60, 60, 0.617);
+}
+.bottom{
+    height: 22%;
+    width:75%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.check{
+    width: 25px;
+    margin: 10px 10px 0 10px;
+}
+.rememberme{
+    width: 300px;
+    height: 25%;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.forgetpass{
+    margin-left: 10px;
+}
+.col{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+
+}

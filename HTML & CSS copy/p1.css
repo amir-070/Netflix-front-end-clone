@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background: url(images/p1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.589);
+}
+
+nav {
+    width: 100vw;
+    height: 77px;
+    background: rgb(34, 27, 27);
+    position: sticky;
+    border-bottom: 3px solid rgb(70, 49, 49);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    background: url(images/navbarlogo.jpg);
+    background-size: cover;
+    width: 135px;
+    height: 75px;
+}
+
+.nav-button {
+    height: 73px;
+    width: 60vw;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 60px;
+    border-radius: 40px;
+}
+
+.a {
+    color: rgba(222, 202, 202, 0.711);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .15s ease-in-out 0s;
+}
+
+.sign-in {
+    height: 65px;
+    width: 13vw;
+    background: rgb(255, 0, 0);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a:hover {
+
+    transform: scale(1.2);
+    color: white;
+}
+
+.trailer {
+    height: 90vh;
+    width: 85vw;
+    background: rgba(0, 0, 0, 0.039);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+video {
+    height: 410px;
+    border: 3px solid rgb(201, 23, 58);
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.698);
+
+
+}
+
+.bg-img2 {
+    background: url(images/jaat.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-img3 {
+    background: url(images/hit.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-img4 {
+    background: url(images/squidgame.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-img5 {
+    background: url(images/royals.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.title {
+    width: 45%;
+    height: 80px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    animation: bt 5s steps(100) 0s infinite normal ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(134, 12, 12, 0.628);
+    background:#ff0000;
+    align-self: flex-start;
+   -webkit-text-stroke: 2px rgba(255, 255, 255, 0.63) ;
+}
+.title:hover{
+    cursor: pointer;
+}
