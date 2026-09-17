@@ -3,23 +3,30 @@
     box-sizing: border-box;
     color:white;
 }
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
 .bg-img{
      background-image: url(images/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_large.jpg);
-     height:100vh;
-     width:100vw;
+     min-height:100vh;
+     width:100%;
+     background-size: cover;
+     background-position: center;
      transform :scale(1.02);
 }
 .bg-color{
-    height:100vh;
-     width:100vw;
+    min-height:100vh;
+     width:100%;
      background: rgba(0, 0, 0, 0.406);
      display: flex;
      justify-content: center;
      align-items: end;
 }
 .mdiv{
-   width:75%;
-   height: 58%;
+   width:100%;
+   min-height: 58%;
 
    display: flex;
    flex-wrap: wrap;
@@ -27,8 +34,8 @@
     justify-content: center;
 }
 .mainf{
-    height: 700px;
-    width: 500px;
+    min-height: min(700px, calc(100vh - 2rem));
+    width: min(500px, calc(100% - 2rem));
     background: rgba(0, 0, 0, 0.668);
     border-radius: 10px; 
     display: flex;
@@ -45,7 +52,7 @@ h1{
 }
 input{
     width: 98%;
-    height:15%;
+    min-height: 56px;
     background: transparent;
     border-radius: 4px;
     border: .5px solid white;
@@ -80,7 +87,7 @@ button{
     background: rgba(66, 60, 60, 0.617);
 }
 .bottom{
-    height: 22%;
+    min-height: 22%;
     width:75%;
     display: flex;
     flex-wrap: wrap;
@@ -104,4 +111,19 @@ button{
     font-size: 14px;
     font-weight: 400;
 
+}
+
+@media (max-width: 420px) {
+    .mainf {
+        width: calc(100% - 1rem);
+    }
+
+    .mdiv,
+    .bottom {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
 }
